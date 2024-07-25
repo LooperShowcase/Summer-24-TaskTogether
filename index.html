@@ -1,0 +1,538 @@
+<!--
+// v0 by Vercel.
+// https://v0.dev/t/hyYPVsv1Oaf
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK-TOGETHER</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="flex flex-col min-h-screen bg-background">
+      <header
+        class="bg-primary text-primary-foreground py-4 px-6 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="w-6 h-6"
+          >
+            <path d="M3 7V5c0-1.1.9-2 2-2h2"></path>
+            <path d="M17 3h2c1.1 0 2 .9 2 2v2"></path>
+            <path d="M21 17v2c0 1.1-.9 2-2 2h-2"></path>
+            <path d="M7 21H5c-1.1 0-2-.9-2-2v-2"></path>
+            <rect width="7" height="5" x="7" y="7" rx="1"></rect>
+            <rect width="7" height="5" x="10" y="12" rx="1"></rect>
+          </svg>
+          <h1 class="text-2xl font-bold">Family Organizer</h1>
+        </div>
+        <nav class="flex items-center gap-4">
+          <a class="hover:underline" href="#" rel="ugc"> Chores </a>
+          <a class="hover:underline" href="2.html" rel="ugc"> Rewards </a>
+          <a class="hover:underline" href="3.html" rel="ugc"> Calendar </a>
+          <a class="hover:underline" href="#" rel="ugc"> Settings </a>
+        </nav>
+      </header>
+      <main class="flex-1 py-8 px-6">
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            class="border bg-card text-card-foreground p-6 rounded-lg shadow-md"
+            data-v0-t="card"
+          >
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3
+                class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight"
+              >
+                Upcoming Events
+              </h3>
+            </div>
+            <div class="p-6">
+              <div class="grid gap-4">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="bg-primary rounded-full w-10 h-10 flex items-center justify-center text-primary-foreground"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-6 h-6"
+                    >
+                      <path d="M8 2v4"></path>
+                      <path d="M16 2v4"></path>
+                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <path d="M3 10h18"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-medium">Soccer Practice</h3>
+                    <p class="text-muted-foreground">Thursday, 5:30 PM</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div
+                    class="bg-primary rounded-full w-10 h-10 flex items-center justify-center text-primary-foreground"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-6 h-6"
+                    >
+                      <path d="M8 2v4"></path>
+                      <path d="M16 2v4"></path>
+                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <path d="M3 10h18"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-medium">Family Game Night</h3>
+                    <p class="text-muted-foreground">Saturday, 7:00 PM</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div
+                    class="bg-primary rounded-full w-10 h-10 flex items-center justify-center text-primary-foreground"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-6 h-6"
+                    >
+                      <path d="M8 2v4"></path>
+                      <path d="M16 2v4"></path>
+                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <path d="M3 10h18"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-medium">School Play</h3>
+                    <p class="text-muted-foreground">Friday, 6:30 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border bg-card text-card-foreground p-6 rounded-lg shadow-md"
+            data-v0-t="card"
+          >
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3
+                class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight"
+              >
+                Chores
+              </h3>
+            </div>
+            <div class="p-6">
+              <div class="grid gap-4">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="bg-primary rounded-full w-10 h-10 flex items-center justify-center text-primary-foreground"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="w-6 h-6"
+                      >
+                        <rect
+                          width="8"
+                          height="4"
+                          x="8"
+                          y="2"
+                          rx="1"
+                          ry="1"
+                        ></rect>
+                        <path
+                          d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-medium">Clean Room</h3>
+                      <p class="text-muted-foreground">Due: Friday, 5:00 PM</p>
+                    </div>
+                  </div>
+                  <button
+                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                  >
+                    Complete
+                  </button>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="bg-primary rounded-full w-10 h-10 flex items-center justify-center text-primary-foreground"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="w-6 h-6"
+                      >
+                        <rect
+                          width="8"
+                          height="4"
+                          x="8"
+                          y="2"
+                          rx="1"
+                          ry="1"
+                        ></rect>
+                        <path
+                          d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-medium">Wash Dishes</h3>
+                      <p class="text-muted-foreground">Due: Daily, 8:00 PM</p>
+                    </div>
+                  </div>
+                  <button
+                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                  >
+                    Complete
+                  </button>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="bg-primary rounded-full w-10 h-10 flex items-center justify-center text-primary-foreground"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="w-6 h-6"
+                      >
+                        <rect
+                          width="8"
+                          height="4"
+                          x="8"
+                          y="2"
+                          rx="1"
+                          ry="1"
+                        ></rect>
+                        <path
+                          d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-medium">Take Out Trash</h3>
+                      <p class="text-muted-foreground">
+                        Due: Wednesday, 7:00 PM
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                  >
+                    Complete
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border bg-card text-card-foreground p-6 rounded-lg shadow-md"
+            data-v0-t="card"
+          >
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3
+                class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight"
+              >
+                Rewards
+              </h3>
+            </div>
+            <div class="p-6">
+              <div class="grid gap-4">
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="bg-primary rounded-full w-10 h-10 flex items-center justify-center text-primary-foreground"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="w-6 h-6"
+                      >
+                        <rect x="3" y="8" width="18" height="4" rx="1"></rect>
+                        <path d="M12 8v13"></path>
+                        <path
+                          d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"
+                        ></path>
+                        <path
+                          d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-medium">
+                        Movie Night with Popcorn
+                      </h3>
+                      <p class="text-muted-foreground">Earned: 50 points</p>
+                    </div>
+                  </div>
+                  <button
+                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                  >
+                    Redeem
+                  </button>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="bg-primary rounded-full w-10 h-10 flex items-center justify-center text-primary-foreground"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="w-6 h-6"
+                      >
+                        <rect x="3" y="8" width="18" height="4" rx="1"></rect>
+                        <path d="M12 8v13"></path>
+                        <path
+                          d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"
+                        ></path>
+                        <path
+                          d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-medium">
+                        Extra 30 Minutes of Screen Time
+                      </h3>
+                      <p class="text-muted-foreground">Earned: 25 points</p>
+                    </div>
+                  </div>
+                  <button
+                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                  >
+                    Redeem
+                  </button>
+                </div>
+                <div class="flex items-center justify-between">
+                  <div class="flex items-center gap-4">
+                    <div
+                      class="bg-primary rounded-full w-10 h-10 flex items-center justify-center text-primary-foreground"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="w-6 h-6"
+                      >
+                        <rect x="3" y="8" width="18" height="4" rx="1"></rect>
+                        <path d="M12 8v13"></path>
+                        <path
+                          d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7"
+                        ></path>
+                        <path
+                          d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5"
+                        ></path>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="text-lg font-medium">
+                        Family Trip to the Zoo
+                      </h3>
+                      <p class="text-muted-foreground">Earned: 100 points</p>
+                    </div>
+                  </div>
+                  <button
+                    class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-9 rounded-md px-3"
+                  >
+                    Redeem
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="border bg-card text-card-foreground p-6 rounded-lg shadow-md"
+            data-v0-t="card"
+          >
+            <div class="flex flex-col space-y-1.5 p-6">
+              <h3
+                class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight"
+              >
+                Reminders
+              </h3>
+            </div>
+            <div class="p-6">
+              <div class="grid gap-4">
+                <div class="flex items-center gap-4">
+                  <div
+                    class="bg-primary rounded-full w-10 h-10 flex items-center justify-center text-primary-foreground"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"
+                      ></path>
+                      <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-medium">
+                      Soccer Practice Reminder
+                    </h3>
+                    <p class="text-muted-foreground">Thursday, 5:30 PM</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div
+                    class="bg-primary rounded-full w-10 h-10 flex items-center justify-center text-primary-foreground"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"
+                      ></path>
+                      <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-medium">
+                      Family Game Night Reminder
+                    </h3>
+                    <p class="text-muted-foreground">Saturday, 7:00 PM</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-4">
+                  <div
+                    class="bg-primary rounded-full w-10 h-10 flex items-center justify-center text-primary-foreground"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-6 h-6"
+                    >
+                      <path
+                        d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"
+                      ></path>
+                      <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-medium">School Play Reminder</h3>
+                    <p class="text-muted-foreground">Friday, 6:30 PM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer
+        class="bg-primary text-primary-foreground py-4 px-6 flex items-center justify-between"
+      >
+        <p class="text-sm">© 2024 Family Organizer. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a class="hover:underline" href="#" rel="ugc"> Privacy Policy </a>
+          <a class="hover:underline" href="#" rel="ugc"> Terms of Service </a>
+          <a class="hover:underline" href="#" rel="ugc"> Contact Us </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
